@@ -1,14 +1,21 @@
-command=" hello"
-while command.lower() !="quit":
-    command=input(">")
-    if command.lower()=="start":
-        print("car stated...")
-    elif command.lower()=="stop":
-        print("car started")
-    elif command=='help':
-        print("""
-        start-to start the car
-        stop-to stop the car
-        quit- to quit
-        """)
-    else:print('sorry i dont understant')
+cool=""
+started=False
+while True:
+    cool=input(">").lower()
+
+    if cool=='start':
+        if started:
+            print("car already started")
+        else:
+            started=True
+            print('car start')
+    elif cool=='stop':
+        if started :
+            print('car already stoped')
+        else:
+            started=False
+            print("car stop")
+
+    elif cool=='help':
+         print("help not availavil")
+    else:print('i dont undrstant')

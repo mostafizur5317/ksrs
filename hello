@@ -1,0 +1,5 @@
+name=input("inter your numbers=")
+if name%2==0:
+print('even')
+elif name%2 !=0
+print('odd')
